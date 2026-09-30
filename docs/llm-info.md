@@ -42,8 +42,8 @@ Tehama, Glenn, Butte, Shasta counties, Northern California. Based at 209 San Ben
 ## Contact & key pages
 
 - Phone: 530-385-1445 · Email: paul@dudleysexcavating.com · 209 San Benito Ave, Gerber, CA 96035
-- Request a call / bid sheet: https://bannisterderik-tech.github.io/dudleys-excavating/contact/
-- Directional boring capability: https://bannisterderik-tech.github.io/dudleys-excavating/directional-boring/
-- Paradise case study: https://bannisterderik-tech.github.io/dudleys-excavating/paradise-fiber/
-- Project photo gallery (real crews, no stock): https://bannisterderik-tech.github.io/dudleys-excavating/projects/
-- Careers: https://bannisterderik-tech.github.io/dudleys-excavating/apply/
+- Request a call / bid sheet: https://dudleys-excavating-website.netlify.app/contact/
+- Directional boring capability: https://dudleys-excavating-website.netlify.app/directional-boring/
+- Paradise case study: https://dudleys-excavating-website.netlify.app/paradise-fiber/
+- Project photo gallery (real crews, no stock): https://dudleys-excavating-website.netlify.app/projects/
+- Careers: https://dudleys-excavating-website.netlify.app/apply/
