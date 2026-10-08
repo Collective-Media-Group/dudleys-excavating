@@ -252,6 +252,17 @@ font-size:15px;letter-spacing:.05em;text-transform:uppercase;padding:9px 16px}
 .checks li::before{content:"//";position:absolute;left:0;top:.2em;font-family:var(--mono);color:var(--red-hot);font-size:12px}
 .checks li b{color:var(--ink)}
 
+/* legacy archive */
+.legacy{display:grid;grid-template-columns:1.35fr 1fr;grid-template-rows:1fr 1fr;gap:16px;margin-top:42px}
+.legacy>*{min-width:0}
+.legacy figure{position:relative;margin:0;border:1px solid var(--line);border-radius:3px;overflow:hidden;background:var(--panel)}
+.legacy .lg-a{grid-row:1/3}
+.legacy img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.96)}
+.legacy figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 16px 13px;background:linear-gradient(0deg,rgba(10,10,10,.9),rgba(10,10,10,.35) 60%,transparent)}
+.legacy figcaption b{display:block;font-family:var(--disp);font-weight:700;font-size:20px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink);line-height:1.1}
+.legacy figcaption span{font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--yellow)}
+@media(max-width:700px){.legacy{grid-template-columns:1fr;grid-template-rows:auto}.legacy .lg-a{grid-row:auto}.legacy figcaption{padding:34px 12px 10px}.legacy figcaption b{font-size:17px}}
+
 /* paradise */
 .paradise{position:relative;overflow:hidden;background:#120d0b}
 .paradise .bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.28;filter:saturate(.8)}
@@ -451,7 +462,20 @@ font-family:var(--body);font-weight:500;font-size:13.5px;padding:8px 14px;cursor
       <li><b>Glen Gipper</b> — project management on the carrier and agency work.</li>
     </ul>
   </div>
-  <figure class="rv"><img src="/assets/photos/42fb96bd-057d-42af-8869-a5e01283f474.jpg" alt="Crew laying out marks before a cut" loading="lazy"><figcaption>Layout before the cut</figcaption></figure>
+  <figure class="rv"><img src="/assets/legacy/legacy-archive-print.jpg" alt="Restored archive print of an early Dudley's backhoe, laid on a workbench with gloves and a county map" loading="lazy"><figcaption>The archive — where it started</figcaption></figure>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <span class="kick rv">From the archive</span>
+  <h2 class="rv" style="max-width:16ch">Same ground. Same name.</h2>
+  <div class="legacy rv">
+    <figure class="lg-a"><img src="/assets/legacy/legacy-first-iron.jpg" alt="Early Dudley's backhoe and operator, restored black-and-white archive photo" loading="lazy">
+      <figcaption><b>The first iron</b><span>Family archive · restored</span></figcaption></figure>
+    <figure><img src="/assets/legacy/legacy-yard-2001.jpg" alt="Dudley's backhoe lineup in the yard, restored from a 2001 newspaper photo" loading="lazy">
+      <figcaption><b>The yard · 2001</b><span>Newspaper archive · restored</span></figcaption></figure>
+    <figure><img src="/assets/photos/42fb96bd-057d-42af-8869-a5e01283f474.jpg" alt="Crew laying out marks before a cut" loading="lazy">
+      <figcaption><b>Today</b><span>Layout before the cut</span></figcaption></figure>
+  </div>
 </div></section>
 
 

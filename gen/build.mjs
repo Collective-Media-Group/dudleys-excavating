@@ -241,6 +241,17 @@ font-size:15px;letter-spacing:.05em;text-transform:uppercase;padding:9px 16px}
 .checks li::before{content:"//";position:absolute;left:0;top:.2em;font-family:var(--mono);color:var(--red-hot);font-size:12px}
 .checks li b{color:var(--ink)}
 
+/* legacy archive */
+.legacy{display:grid;grid-template-columns:1.35fr 1fr;grid-template-rows:1fr 1fr;gap:16px;margin-top:42px}
+.legacy>*{min-width:0}
+.legacy figure{position:relative;margin:0;border:1px solid var(--line);border-radius:3px;overflow:hidden;background:var(--panel)}
+.legacy .lg-a{grid-row:1/3}
+.legacy img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.96)}
+.legacy figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 16px 13px;background:linear-gradient(0deg,rgba(10,10,10,.9),rgba(10,10,10,.35) 60%,transparent)}
+.legacy figcaption b{display:block;font-family:var(--disp);font-weight:700;font-size:20px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink);line-height:1.1}
+.legacy figcaption span{font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--yellow)}
+@media(max-width:700px){.legacy{grid-template-columns:1fr;grid-template-rows:auto}.legacy .lg-a{grid-row:auto}.legacy figcaption{padding:34px 12px 10px}.legacy figcaption b{font-size:17px}}
+
 /* paradise */
 .paradise{position:relative;overflow:hidden;background:#120d0b}
 .paradise .bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.28;filter:saturate(.8)}
@@ -778,20 +789,25 @@ ${paradiseBand()}
   <p class="rv" style="margin-top:30px"><a class="btn red" href="/contact/">Start the bid sheet →</a> <a class="btn ghost" href="/directional-boring/" style="margin-left:8px">HDD capability →</a></p>
 </div></section>
 
-<section class="sec" style="padding-top:0"><div class="wrap band">
-  <div class="rv">
-    <span class="kick">Since ${biz.founded}, when ${biz.founder} broke ground</span>
-    <h2>We know how the ground moves here</h2>
-    <p class="lede">Dudley&rsquo;s Excavating has been serving the Gerber area for generations. We understand the way the ground moves around here, the soil types that are common, and the hazards a project can run into — because we've been digging in it our whole lives.</p>
-    <ul class="checks">
-      <li><b>Three generations</b> of Dudleys running the work — ${biz.family.join(", ")}.</li>
-      <li><b>${biz.powerUnits} power units, ${biz.drivers} drivers</b> on file with the FMCSA — real fleet depth, radio dispatched.</li>
-      <li><b>${biz.permits} permitted projects</b> across Chico, Redding and Butte County since 2018.</li>
-      <li><b>Certified Small Business</b> (DGS #${biz.dgs}) — count us toward your SB participation goals.</li>
-    </ul>
-    <p style="margin-top:28px"><a class="btn ghost" href="/about/">The Dudley story →</a></p>
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <span class="kick rv">The Dudley legacy · Est. ${biz.founded}</span>
+  <h2 class="rv" style="max-width:17ch">We&rsquo;ve been in this ground since ${biz.founded}</h2>
+  <p class="lede rv">Three generations of Dudleys — ${biz.family.join(", ")} — running the outfit ${biz.founder} started. We know how the ground moves here because we&rsquo;ve been digging in it our whole lives.</p>
+  <div class="legacy rv">
+    <figure class="lg-a"><img src="/assets/legacy/legacy-first-iron.jpg" alt="Early Dudley's backhoe and operator, restored black-and-white archive photo" loading="lazy">
+      <figcaption><b>The first iron</b><span>Family archive · restored</span></figcaption></figure>
+    <figure><img src="/assets/legacy/legacy-yard-2001.jpg" alt="Dudley's backhoe lineup in the yard, restored from a 2001 newspaper photo" loading="lazy">
+      <figcaption><b>The yard · 2001</b><span>Newspaper archive · restored</span></figcaption></figure>
+    <figure><img src="${P("64fcad2e-5201-4399-af3c-c5ebc1a974ff.jpg")}" alt="Dudley's crew and excavator on a hillside job today" loading="lazy">
+      <figcaption><b>Today</b><span>Hillside job · full traffic control</span></figcaption></figure>
   </div>
-  <figure class="rv"><img src="${P("64fcad2e-5201-4399-af3c-c5ebc1a974ff.jpg")}" alt="Dudley's crew and excavator on a hillside job" loading="lazy"><figcaption>Crew-owned standards</figcaption></figure>
+  <ul class="checks rv" style="margin-top:36px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px 36px">
+    <li><b>Three generations</b> of Dudleys running the work — ${biz.family.join(", ")}.</li>
+    <li><b>${biz.powerUnits} power units, ${biz.drivers} drivers</b> on file with the FMCSA — real fleet depth, radio dispatched.</li>
+    <li><b>${biz.permits} permitted projects</b> across Chico, Redding and Butte County since 2018.</li>
+    <li><b>Certified Small Business</b> (DGS #${biz.dgs}) — count us toward your SB participation goals.</li>
+  </ul>
+  <p class="rv" style="margin-top:30px"><a class="btn ghost" href="/about/">The Dudley story →</a></p>
 </div></section>
 
 <section class="sec" style="padding-top:0"><div class="wrap">
@@ -1056,7 +1072,20 @@ ${pageHero("64fcad2e-5201-4399-af3c-c5ebc1a974ff-1.jpg","Gerber, California","Th
       <li><b>${biz.pm}</b> — project management on the carrier and agency work.</li>
     </ul>
   </div>
-  <figure class="rv"><img src="${P("42fb96bd-057d-42af-8869-a5e01283f474.jpg")}" alt="Crew laying out marks before a cut" loading="lazy"><figcaption>Layout before the cut</figcaption></figure>
+  <figure class="rv"><img src="/assets/legacy/legacy-archive-print.jpg" alt="Restored archive print of an early Dudley's backhoe, laid on a workbench with gloves and a county map" loading="lazy"><figcaption>The archive — where it started</figcaption></figure>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <span class="kick rv">From the archive</span>
+  <h2 class="rv" style="max-width:16ch">Same ground. Same name.</h2>
+  <div class="legacy rv">
+    <figure class="lg-a"><img src="/assets/legacy/legacy-first-iron.jpg" alt="Early Dudley's backhoe and operator, restored black-and-white archive photo" loading="lazy">
+      <figcaption><b>The first iron</b><span>Family archive · restored</span></figcaption></figure>
+    <figure><img src="/assets/legacy/legacy-yard-2001.jpg" alt="Dudley's backhoe lineup in the yard, restored from a 2001 newspaper photo" loading="lazy">
+      <figcaption><b>The yard · 2001</b><span>Newspaper archive · restored</span></figcaption></figure>
+    <figure><img src="${P("42fb96bd-057d-42af-8869-a5e01283f474.jpg")}" alt="Crew laying out marks before a cut" loading="lazy">
+      <figcaption><b>Today</b><span>Layout before the cut</span></figcaption></figure>
+  </div>
 </div></section>
 
 ${statBand}
