@@ -796,8 +796,8 @@ ${paradiseBand()}
   <div class="legacy rv">
     <figure class="lg-a"><img src="/assets/legacy/legacy-first-iron.jpg" alt="Early Dudley's backhoe and operator, restored black-and-white archive photo" loading="lazy">
       <figcaption><b>The first iron</b><span>Family archive · restored</span></figcaption></figure>
-    <figure><img src="/assets/legacy/legacy-yard-2001.jpg" alt="Dudley's backhoe lineup in the yard, restored from a 2001 newspaper photo" loading="lazy">
-      <figcaption><b>The yard · 2001</b><span>Newspaper archive · restored</span></figcaption></figure>
+    <figure><img src="/assets/legacy/legacy-archive-print.jpg" alt="The original archive print on the workbench, with gloves and a county map" loading="lazy">
+      <figcaption><b>The print</b><span>Family archive · restored</span></figcaption></figure>
     <figure><img src="${P("64fcad2e-5201-4399-af3c-c5ebc1a974ff.jpg")}" alt="Dudley's crew and excavator on a hillside job today" loading="lazy">
       <figcaption><b>Today</b><span>Hillside job · full traffic control</span></figcaption></figure>
   </div>
@@ -1072,7 +1072,7 @@ ${pageHero("64fcad2e-5201-4399-af3c-c5ebc1a974ff-1.jpg","Gerber, California","Th
       <li><b>${biz.pm}</b> — project management on the carrier and agency work.</li>
     </ul>
   </div>
-  <figure class="rv"><img src="/assets/legacy/legacy-archive-print.jpg" alt="Restored archive print of an early Dudley's backhoe, laid on a workbench with gloves and a county map" loading="lazy"><figcaption>The archive — where it started</figcaption></figure>
+  <figure class="rv"><img src="/assets/legacy/legacy-yard-lineup.jpg" alt="Dudley's backhoe lineup in the yard, restored from a newspaper photo" loading="lazy"><figcaption>The yard lineup — newspaper archive, restored</figcaption></figure>
 </div></section>
 
 <section class="sec" style="padding-top:0"><div class="wrap">
@@ -1081,8 +1081,8 @@ ${pageHero("64fcad2e-5201-4399-af3c-c5ebc1a974ff-1.jpg","Gerber, California","Th
   <div class="legacy rv">
     <figure class="lg-a"><img src="/assets/legacy/legacy-first-iron.jpg" alt="Early Dudley's backhoe and operator, restored black-and-white archive photo" loading="lazy">
       <figcaption><b>The first iron</b><span>Family archive · restored</span></figcaption></figure>
-    <figure><img src="/assets/legacy/legacy-yard-2001.jpg" alt="Dudley's backhoe lineup in the yard, restored from a 2001 newspaper photo" loading="lazy">
-      <figcaption><b>The yard · 2001</b><span>Newspaper archive · restored</span></figcaption></figure>
+    <figure><img src="/assets/legacy/legacy-archive-print.jpg" alt="The original archive print on the workbench, with gloves and a county map" loading="lazy">
+      <figcaption><b>The print</b><span>Family archive · restored</span></figcaption></figure>
     <figure><img src="${P("42fb96bd-057d-42af-8869-a5e01283f474.jpg")}" alt="Crew laying out marks before a cut" loading="lazy">
       <figcaption><b>Today</b><span>Layout before the cut</span></figcaption></figure>
   </div>
